@@ -13,23 +13,24 @@ body {
 
  
 
-
 /*html 5 elements */
 
 header {
-    height: 100px;
+    height: 90px;
     background-color: #4d4849;
+    color: white;
 }
 
 section {
     min-height: 500px;
     background-color: lightgray;
+ 
     float: right;
-    width: 66%;
+    width: 85%;
 }
 
 aside {
-    width: 33%;
+    width: 15%;
     background-color: #7a7575;
     min-height: 500px;
     float: left;
@@ -40,6 +41,22 @@ footer {
     clear: both;
     background-color: #9f9d9d;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* media query tablet 768px */

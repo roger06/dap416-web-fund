@@ -1,0 +1,29 @@
+body {
+    
+/*    display: none;*/
+}
+
+
+p {
+    
+    font-family: Verdana;
+    color: darkgreen;
+    font-size: 44px;
+}
+
+h2, h3, ul {
+    font-weight: bold;
+}
+
+
+
+h3 {
+    
+    color: red;
+}
+
+
+ul {
+   
+    font-style: italic;
+}
