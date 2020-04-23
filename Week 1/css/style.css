@@ -1,0 +1,33 @@
+body{
+    font-size: 100%;
+}
+
+p {
+    font-family: Verdana, Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+ 
+.green {
+   color: green; 
+}
+
+.red {
+
+    border: 1px solid red;
+    height: 200px;
+    width: 45%;
+
+}
+
+#bgyellow {
+
+    background-color: yellow;
+}
+
+/* div {
+    border: 1px solid black;
+    height: 200px;
+    width: 50%;
+    margin-bottom: 10px;
+
+} */
