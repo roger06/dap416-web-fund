@@ -80,7 +80,7 @@ p{
 
 }
 
-
+/* these will apply to all ul on the site - need to change this to be more specific. */
 ul {
     list-style-type: none;
     /* border: 1px solid black; */
@@ -149,13 +149,14 @@ a:visited {}
     color: white;
 }
 
-
+/* UL nav in the header */
 
 header ul li {
 
     float: left;
     text-align: center;
     margin-right: 10px;
+    background-color: transparent;
 }
 
 header  a:link {
