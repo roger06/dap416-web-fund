@@ -1,0 +1,208 @@
+body {
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#container {
+
+    width: 80%;
+    margin: 0 auto;
+    background-color: ghostwhite;
+}
+header p {
+
+    font-size: 1em;
+}
+
+/* main layout */
+header {
+
+    /* background-color: blue; */
+    height: 100px;
+    border: 1px double gray;
+    padding: 1%;
+   
+    font-weight: bold;
+
+}
+
+
+
+aside {
+
+    /* background-color: yellow; */
+
+    width: 20%;
+    float: left;
+    border-left: 1px dashed gray;
+    min-height: 510px;
+}
+
+section {
+
+    background-color:#fff;
+
+    width: 78%;      /* note this is not 80% because of the padding and border*/
+    float: right;
+    min-height: 510px;
+    padding: 0.5%;
+    border: 1px dashed gray;
+
+
+}
+
+section article {
+
+    padding: 0 2% 0 2%;
+}
+
+section h2 {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0px;
+    color: darkgray;
+}
+section p, section a {
+    font-size: 1em;
+     margin-top: 0px;
+}
+
+footer {
+
+    /* background-color: orange; */
+    height: 70px;
+    clear: both;
+    padding: 5px;
+    border: 1px dashed gray;
+}
+
+p{
+
+}
+
+
+ul {
+    list-style-type: none;
+    /* border: 1px solid black; */
+    padding: 0;
+    padding-left: 10px;
+    width: 70%;
+    font-size: 1em;
+}
+
+li {
+
+    border: 1px dashed red;
+
+    padding: 5px 25px 5px 5px;
+    margin-bottom: 10px;
+    background-color: white;
+
+
+
+}
+/* navigation and links */
+
+a {
+
+    font-size: 0.8em;
+}
+
+aside a {
+    text-decoration: none;
+    display: block;
+    color: black;
+
+}
+
+aside a:hover {
+
+    text-decoration: underline;
+    color: red;
+    background-color: inherit;
+}
+
+a:link {
+
+    border: black 2px;
+    height: 100%;
+    
+}
+
+a:hover {
+
+    background-color: blueviolet;
+    color: white;
+}
+
+a:active {}
+
+a:visited {}
+
+.selected {
+    
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+header ul li {
+
+    float: left;
+    text-align: center;
+    margin-right: 10px;
+}
+
+header  a:link {
+
+    color: gray;
+    
+}
+
+
+
+/* break point 800px or less */
+@media only screen and (max-width: 800px) {
+
+    body {
+        background-color: lightblue;
+        margin: 0;
+    }
+
+    #container {
+        width: 95%;
+    }
+
+    aside {
+
+        display: none;
+    }
+
+    header {
+
+        width: 100%;
+        height: 40px;
+        border: none;
+
+    }
+    header ul {
+        display: none;
+    }
+    section {
+        padding: 0%;
+        width: 100%;
+
+
+
+
+
+    }
+
+    .container {
+
+        width: 100%;
+
+    }
+
+
+}
