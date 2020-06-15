@@ -24,15 +24,19 @@
             border-radius: 15px 8px;
 
             background-image: linear-gradient(left, #999999 0%, #ffffff 100%);
+
             /* this doesn't work in Chrome, Safari or Firefox (mac)
             need to use the prefixes below
             */
 
+          
+background-image: -webkit-gradient(linear, left top, right top, from(#999999), to(#ffffff))
 
-            background-image: -webkit-gradient(linear, left top, right top, from(#999999), to(#ffffff));
+/* 
+            ;
             background-image: -webkit-linear-gradient(left, #999999 0%, #ffffff 100%);
             background-image: -o-linear-gradient(left, #999999 0%, #ffffff 100%);
-
+ */
 
        
 
@@ -49,7 +53,7 @@
     </div>
     
     
-    <p>Copy this into <a href="https://autoprefixer.github.io/"></a>https://autoprefixer.github.io/ </p>
+    <!-- <p>Copy this into <a href="https://autoprefixer.github.io/"></a>https://autoprefixer.github.io/ </p> -->
     <pre>
     
      background-image: linear-gradient(left, #999999 0%, #ffffff 100%);
