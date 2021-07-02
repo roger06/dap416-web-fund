@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Flex : grow - shrink - basis</title>
     <meta charset="UTF-8">
 
     <style>
-    html,
-body {
-	width: 80%;
-	margin: 0 auto;
-	padding: 2%;
-	line-height: 1.6;
-}
+        html,
+        body {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2%;
+            line-height: 1.6;
+        }
 
 
-
-
-.box {
-	border-radius: .3em;
-	box-sizing: border-box;
-	border: 4px solid #999;
-	padding: 20px;
-	background: #E6E3D4;
+        .box {
+            border-radius: .3em;
+            box-sizing: border-box;
+            border: 4px solid #999;
+            padding: 20px;
+            background: #E6E3D4;
 
 
         }
- /*FLEX */
+
+        /*FLEX */
 
 
         .flex-container {
             display: flex;
             margin: 1em 0;
-            border: 1px
-            solid #333;
+            border: 1px solid #333;
         }
 
+        /* colours */
+
         .flex1 {
-            flex:2 1 0;
+            background-color: aqua;
+        }
+
+        .flex2 {
+            background-color: beige;
+        }
+        .flex3 {
+            background-color: cadetblue;
+        }
+        .flex4 {
+            background-color: cornsilk;
+        }
+
+
+        /* flex grow / shrink / basis */
+        .flex1 {
+            flex: 1 1 0;
             /* take this property out and box widths are just governed by the content.
 
             so flex grow (first value) is a PROPORTION compared with other flex items.
@@ -45,66 +62,52 @@ body {
         }
 
         .flex2 {
-            flex:1 1 0;
+            flex: 1 1 0;
             /* when there's space - box with flex: 2 should have double that of one with flex: 1*/
-             background-color:beige;
+            background-color: beige;
         }
 
 
-
-        .flex1 {
-        background-color: aqua;
-
-        } .flex2 {
-        background-color:beige;
-
-        } .flex3 {
-        background-color:cadetblue
-
-        }
-
-
-       .flex3 {
-            background-color:cadetblue;
-           flex:1 1 0;
+        .flex3 {
+            flex: 1 1 0;
 
         }
 
         .flex4 {
-            background-color: cornsilk;
-            flex:1 1 0;
+            flex: 1 1 100%;
         }
-
-
     </style>
 </head>
+
 <body>
-   <h1>Flex : grow - shrink - basis</h1>
+    <h1>Flex : grow - shrink - basis</h1>
 
 
 
-<section class="flex-container">
+    <section class="flex-container">
 
-    <div class="box flex1">
-    <h3>one sdf s dfs dfs df sdf sdf</h3>
-    </div>
-
-
-    <div class="box flex2">
-    <h3>two</h3>
-    </div>
+        <div class="box flex1">
+            <h3>Flex 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, ad dignissimos unde nesciunt quod impedit aspernatur repudiandae cumque pariatur beatae sunt provident tempore. Voluptas voluptate maxime amet illo impedit reprehenderit sunt totam, consequuntur vel sed consectetur aliquid dolorum debitis? Non veniam deserunt consequatur architecto aut vel voluptatum accusantium vero itaque.</p>
+        </div>
 
 
-    <div class="box flex3">
-    <h3>three</h3>
-    </div>
+        <div class="box flex2">
+            <h3>Flex 2</h3>
+        </div>
 
-    <div class="box flex4">
-    <h3>four kasdkj akjsd jka sdkjvef dkjhf kjdhf kjh jkh  </h3>
-    </div>
 
-</section>
+        <div class="box flex3">
+            <h3>Flex 3</h3>
+        </div>
+
+        <div class="box flex4">
+            <h3>Flex 4</h3>
+        </div>
+
+    </section>
 
 
 </body>
+
 </html>
