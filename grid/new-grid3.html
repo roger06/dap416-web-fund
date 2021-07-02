@@ -1,0 +1,58 @@
+<!--  grid-template-columns: 
+
+    grid-template-rows added
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>CSS Grid</title>
+
+       <style>
+           body{
+               background-color: cornsilk;
+               margin-top: 5%;
+           }
+           .container{
+               display: grid;
+               border: black 1px dashed;
+               /* cols */
+               grid-template-columns: 200px 100px;
+               grid-template-rows: 200px 55px;
+               grid-gap: 20px;
+           }
+
+           .item{
+               border: dashed 1px red;
+               padding: 2px;
+           }
+
+       </style>
+</head>
+<body>
+    <h1>Simple grid - two columns, different row heights, margin</i></h1>
+    
+    <p> grid-gap added added</p>
+    
+    <pre>grid-template-rows: 200px 55px;</pre>
+
+    <p>grid-gap is shorthand for grid-row-gap and grid-column-gap., This specifies the gaps we want between rows and columns.</p>
+    <p><i>Firefox denotes these with dashed lines.</i></p>
+    <!-- we want two cols -->
+    <div class="container">
+        <div class="item item1">
+            <p>this is an item 1</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 2</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 3</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 4</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>

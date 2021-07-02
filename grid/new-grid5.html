@@ -1,0 +1,73 @@
+<!--  fr
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>CSS Grid</title>
+
+       <style>
+           body{
+               background-color: cornsilk;
+               margin-top: 5%;
+           }
+           .container{
+               display: grid;
+               border: black 1px dashed;
+               /* cols */
+               /* grid-template-columns: 200px 100px; */
+               grid-template-columns: 1fr 3fr 1fr;
+
+               /* grid-template-rows: 1fr 1fr 1fr */
+              
+                
+           }
+
+           .item{
+               border: dashed 1px red;
+               padding: 2px;
+               color: dimgrey;
+           }
+
+       </style>
+</head>
+<body>
+    <h1>Two columns, other ways to size columns : fractional spacing</i></h1>
+    
+    
+    
+    <pre>grid-template-columns: 1fr 3fr 3fr;</pre>
+    <p>fr is a 'fractional unit'</p>
+
+    
+    <!-- we want two cols -->
+    <div class="container">
+        <div class="item item1">
+            <p>this is an item 1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit quis ex magnam voluptatem facere nam blanditiis minima unde. Veritatis tenetur quos possimus eum voluptate at dolorem minus explicabo aperiam quaerat. Tempora commodi odit nostrum.
+
+            </p>
+          
+        </div>
+
+
+        <div class="item item1">
+            <p>this is an item 2</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 3</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 4</p>
+        </div> 
+        <div class="item item1">
+            <p>this is an item 5</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 6</p>
+        </div>  <div class="item item1">
+            <p>this is an item 6</p>
+         
+
+    </div>
+    
+</body>
+</html>

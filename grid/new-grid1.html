@@ -1,0 +1,48 @@
+<!--  grid-template-columns:  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>CSS Grid</title>
+
+       <style>
+           body{
+               background-color: cornsilk;
+               margin-top: 20%;
+           }
+           .container{
+               display: grid;
+               border: black 1px dashed;
+               /* cols */
+               grid-template-columns: 200px 100px;
+           }
+
+           .item{
+               border: dashed 1px red;
+               padding: 2px;
+           }
+
+       </style>
+</head>
+<body>
+    <h1>Simple grid - two columns</i></h1>
+    <pre>grid-template-columns: 200px 100px;</pre>
+    
+    <!-- we want two cols -->
+    <div class="container">
+        <div class="item item1">
+            <p>this is an item 1</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 2</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 3</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 4</p>
+        </div>
+
+    </div>
+    
+</body>
+</html>
