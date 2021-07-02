@@ -1,0 +1,225 @@
+<!--  fr
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Grid</title>
+
+    <style>
+        body {
+            background-color: cornsilk;
+            margin-top: 5%;
+        }
+
+        .container {
+            display: grid;
+            border: black 1px dashed;
+            /* cols */
+            /* grid-template-columns: 200px 100px; */
+            grid-template-columns: 200px 200px 200px;
+
+            grid-template-rows: 100px 66px 88px;
+            grid-gap: 20px;
+
+            grid-auto-flow: dense;
+
+        }
+
+        .item {
+            border: dashed 1px red;
+            padding: 2px;
+            color: dimgrey;
+        }
+
+        .tablet {
+            display: none;
+        }
+
+        .desktop {
+            color: chocolate;
+        }
+
+        /* break point for tablet */
+
+
+        @media only screen and (max-width: 800px) {
+
+            body {
+
+                background-color: lightgray;
+            }
+
+            .desktop,
+            .phone {
+                display: none;
+            }
+
+            .tablet {
+                display: inline;
+                color: whitesmoke;
+            }
+
+            .container {
+                width: 98%;
+                /* cols */
+                /* grid-template-columns: 200px 100px; */
+                grid-template-columns: 50% 50%;
+
+                grid-template-rows: 80px 66px 188px 111px;
+                grid-gap: 2px;
+
+                grid-auto-flow: dense;
+
+            }
+
+            .item1,
+            .item4 {
+
+                grid-column: 1 / span 2;
+            }
+
+
+
+        }
+
+        /* end tablet breakpoint. */
+
+
+        /* phone size - everything stacked vertically */
+
+        @media only screen and (max-width: 500px) {
+
+            body {
+                background-color: moccasin;
+                margin: 0;
+                padding: 2px;
+            }
+
+            .desktop,
+            .tablet {
+                display: none;
+            }
+
+            .phone {
+                display: inline;
+                color: whitesmoke;
+            }
+
+            .container {
+                width: 100%;
+                /* cols */
+                /* grid-template-columns: 200px 100px; */
+                grid-template-columns: 100%;
+                grid-template-rows: 80px 66px 188px 111px;
+                grid-gap: 6px;
+
+                /* grid-auto-flow: dense; */
+
+            }
+
+            .item1,
+            .item4 {
+
+                grid-column: auto;
+            }
+
+            h2.phone {
+                color: black;
+            }
+
+        }
+
+        /* phone breakpoint */
+
+
+        /* just a test - reorder and hide items at 480px */
+
+        @media only screen and (max-width: 480px) {
+            body {
+                background-color: white;
+                color: black;
+            }
+
+            /* hide item 3 */
+            /* not sure this is correct - can Grid exclude it? */
+            .item3 {
+                display: none;
+            }
+
+
+            .item5 {
+
+                grid-row: 1;
+            }
+
+            .item6 {
+
+                grid-row: 2;
+            }
+
+            .item4 {
+
+                grid-row: 3;
+            }
+
+
+
+
+
+            /* make order 5,6,4,1,2 */
+
+
+        }
+
+        /* 480  */
+    </style>
+</head>
+
+<body>
+    <h1>@media query</h1>
+    <h2 class="desktop">This is desktop size (ish)</h2>
+    <h2 class="tablet">This is tablet size (ish)</h2>
+    <h2 class="phone">This is phone size (ish)</h2>
+    <!-- <p>on the item makes it span</p>
+    
+    <pre>grid-column: 1 / span 2;</pre>
+    
+    <pre>grid-auto-flow: dense;</pre>
+    <p>This setting on the container determines whether the empty spaces created are filled.</p>
+     -->
+
+    <!-- we want two cols -->
+    <div class="container">
+        <div class="item item1">
+            <p>this is an item 1.
+
+            </p>
+
+        </div>
+
+
+        <div class="item item2">
+            <p>this is an item 2</p>
+        </div>
+        <div class="item item3">
+            <p>this is an item 3</p>
+        </div>
+        <div class="item item4">
+            <p>this is an item 4</p>
+        </div>
+        <div class="item item5">
+            <p>this is an item 5</p>
+        </div>
+        <div class="item item6">
+            <p>this is an item 6</p>
+        </div>
+        <!-- <div class="item item1">
+            <p>this is an item 7</p>
+         </div> -->
+
+    </div>
+
+</body>
+
+</html>

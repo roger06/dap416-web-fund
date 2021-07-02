@@ -1,0 +1,88 @@
+<!--  fr
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <title>CSS Grid</title>
+
+       <style>
+           body{
+               background-color: cornsilk;
+               margin-top: 5%;
+           }
+           .container{
+               display: grid;
+               border: black 1px dashed;
+               /* cols */
+               /* grid-template-columns: 200px 100px; */
+               grid-template-columns: 111px 100px 150px;
+
+               grid-template-rows: 50px 66px 88px;
+
+               grid-gap: 20px;
+
+               grid-auto-flow: dense;
+
+            
+              
+                
+           }
+
+           .item{
+               border: dashed 1px red;
+               padding: 2px;
+               color: dimgrey;
+           }
+
+           .item2{
+
+               background-color: blueviolet;
+               color:white;
+               grid-column: 1 / span 2;
+           }
+
+       </style>
+</head>
+<body>
+    <h1>Change span of an item</h1>
+    <p>on the item makes it span</p>
+    
+    <pre>grid-column: 1 / span 2;</pre>
+    
+    <pre>grid-auto-flow: dense;</pre>
+    <p>This setting on the container determines whether the empty spaces created are filled.</p>
+    
+    
+    <!-- we want two cols -->
+    <div class="container">
+        <div class="item item1">
+            <p>this is an item 1. 
+
+            </p>
+          
+        </div>
+
+
+        <div class="item item2">
+            <p>this is an item 2</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 3</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 4</p>
+        </div> 
+        <div class="item item1">
+            <p>this is an item 5</p>
+        </div>
+        <div class="item item1">
+            <p>this is an item 6</p>
+        </div>  
+        <!-- <div class="item item1">
+            <p>this is an item 7</p>
+         </div> -->
+
+    </div>
+    
+</body>
+</html>
